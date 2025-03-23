@@ -1,0 +1,201 @@
+/* ---- GENERAL CONTAINER STYLING ---- */
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---- POPULAR FOOD ITEMS (RECTANGULAR CARDS) ---- */
+.food-items-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: red; /* Keep the red background */
+    width: 100%;
+}
+
+.food-card {
+    text-align: center;
+    background: yellow;
+    border-radius: 10px; /* Changed from 50% to 10px to make it rectangular */
+    width: 140px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.food-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 10px; /* Keeps corners smooth */
+}
+
+/* Food name positioned below the image */
+.food-card span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ---- AVAILABLE RESTAURANTS ---- */
+.restaurants-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.restaurant-card {
+    flex: 1;
+    max-width: calc(33.33% - 20px);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f8f8f8;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.restaurant-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+}
+
+/* Set the background for the entire page */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:white /* Light red */
+}
+
+/* Ensure all sections take the full width */
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Update background for food items & restaurant sections */
+.food-items-container, .restaurants-container {
+    background-color:red; /* To inherit from body */
+}
+.full_width_image{
+    width:100px;
+    padding:0;
+    margin:0;
+}
+.navbar navbar-expand-lg{
+    text-decoration-color: #f8f8f8;
+}
+/* Centering the login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightred; /* Light red background */
+}
+
+/* Styling the form */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Input fields */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Submit button with red theme */
+.btn-primary {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: darkred;
+}
+
+/* Checkbox alignment */
+.form-check-label {
+    margin-left: 5px;
+}
+/* Centering the register form */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white; /* Light red background */
+}
+
+/* Form styling */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Input fields */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Submit button with red theme */
+.btn-primary {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: darkred;
+}
+
+/* Checkbox alignment */
+.form-check-label {
+    margin-left: 5px;
+}
